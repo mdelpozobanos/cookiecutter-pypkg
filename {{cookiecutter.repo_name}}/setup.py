@@ -55,7 +55,7 @@ tests_require = [
     'pytest>=2.0, <3',
     'coverage>=3.0, <4.0',
     'flake8>=2.0, <3.0',
-    'wheel>=0.0, <1.0'
+    'wheel>=0.0, <1.0',
     'tox>=1.0, <2.0'
 ]
 # Conditional requirements
