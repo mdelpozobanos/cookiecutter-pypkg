@@ -1,20 +1,52 @@
-===============================
-{{ cookiecutter.project_name }}
-===============================
+=======================================
+{{ cookiecutter.project_name }}: Readme
+=======================================
 
-.. image:: https://img.shields.io/travis/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.svg
-        :target: https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
-
-.. image:: https://img.shields.io/pypi/v/{{ cookiecutter.repo_name }}.svg
-        :target: https://pypi.python.org/pypi/{{ cookiecutter.repo_name }}
+This is a project template to provide guidance.
 
 
-{{ cookiecutter.project_short_description}}
+------------
+Code Example
+------------
 
-* Free software: BSD license
-* Documentation: https://{{ cookiecutter.repo_name }}.readthedocs.org.
+Provide code examples and explanations of how to use the project.
 
-Features
---------
 
-* TODO
+------------
+Installation
+------------
+
+Provide code examples and explanations of how to get the project.
+
+
+-------------
+API Reference
+-------------
+
+Depending on the size of the project, if it is small and simple enough the
+reference docs can be added to the README. For medium size to larger projects
+it is important to at least provide a link to where the API reference docs
+live.
+
+
+-----
+Tests
+-----
+
+Describe and show how to run the tests with code examples.
+
+
+------------
+Contributors
+------------
+
+Let people know how they can dive into the project, include important links to
+things like issue trackers, irc, twitter accounts if applicable.
+
+
+=======
+License
+=======
+
+The {{ cookiecutter.repo_name }} framework is open-sourced software licensed
+under the `MIT license <http://opensource.org/licenses/MIT>`_.

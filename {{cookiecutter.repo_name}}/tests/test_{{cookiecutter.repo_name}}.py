@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 """
 test_{{ cookiecutter.repo_name }}
 ----------------------------------
@@ -8,21 +7,33 @@ test_{{ cookiecutter.repo_name }}
 Tests for `{{ cookiecutter.repo_name }}` module.
 """
 
-import unittest
-
+import pytest
 from {{ cookiecutter.repo_name }} import {{ cookiecutter.repo_name }}
 
 
-class Test{{ cookiecutter.repo_name|capitalize }}(unittest.TestCase):
+def test_foo():
+    """String describing the test"""
+    assert({{ cookiecutter.repo_name }}.foo(1, 2) == 2)
 
-    def setUp(self):
-        pass
 
-    def test_something(self):
-        pass
+# The following is an attribute definition
+@pytest.fixture(scope='class')
+def foo_obj():
+    return {{ cookiecutter.repo_name }}.Foo({{ cookiecutter.repo_name }}.foo)
 
-    def tearDown(self):
-        pass
 
-if __name__ == '__main__':
-    unittest.main()
+class TestFoo():
+    """Class to test the {{ cookiecutter.repo_name }}.Foo class"""
+
+    def test_main(self):
+        """Allocation"""
+        {{ cookiecutter.repo_name }}.Foo({{ cookiecutter.repo_name }}.foo)
+
+    def test_foo(self, foo_obj):
+        """Method foo"""
+        assert(foo_obj.foo(2, 2) == 4)
+
+    def test_foo_args(self, foo_obj):
+        """Bad arg detection"""
+        with pytest.raises(TypeError):
+            foo_obj.foo(2, 'a')
