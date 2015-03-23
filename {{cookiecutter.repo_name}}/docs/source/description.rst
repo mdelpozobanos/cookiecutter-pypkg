@@ -7,6 +7,7 @@ based mainly in the blogs of `Jeff Knupp`_.
 
 The templates characteristics are:
 
++ Free software: MIT license
 + Has the structure::
 
       .<root_folder>
@@ -31,21 +32,17 @@ The templates characteristics are:
       | - .gitignore
 
 + Uses a single definition of the package's **version** within *__init__.py*.
-+ Uses git_ for version control.
-+ Uses git-flow_ to manage git workflow
-+ Uses virtualenv_ to create virtual
-  environments.
-+ Uses virtualenvwrapper_ to
-  manage *virtualenv*.
-+ Uses pytest_ for testing.
-+ Uses pytest-cov_ to check testing
-  coverage.
-+ Uses tox_ to test different environments.
-+ Uses flake8_ to check the coding
-  style.
-+ Uses Sphinx_ to generate documentation.
-+ Uses TravisCI_ to publish the documentation.
-+ Uses ReadTheDocs_ to publish the documentation.
++ Suggests Git_: For version control.
++ Suggests Git-Flow_: To manage git workflow.
++ Suggests virtualenv_: To create virtual environments.
++ Suggests virtualenvwrapper_: To manage *virtualenv*.
++ Uses PyTest_: For code testing.
++ Uses Coverage_: For tracking test coverage.
++ Uses Tox_: For testing different environments.
++ Uses Flake8_: To check the coding style.
++ Sphinx_: Ready for Sphinx documentation auto-generator.
++ Travis-CI_: Ready for Travis Continuous Integration testing.
++ Suggest ReadTheDocs_: To publish the generated documentation.
 
 
 -----------
@@ -383,6 +380,7 @@ Documentation must have the following information
   project folder)
 
 
+.. _coverage: https://pypi.python.org/pypi/coverage
 .. _Daniel Greenfeld: http://www.pydanny.com/cookie-project-templates-made-easy.html
 .. _Donald Stufft: https://caremad.io/2013/07/setup-vs-requirement/
 .. _flake8: https://flake8.readthedocs.org/en/2.3.0/
@@ -394,7 +392,6 @@ Documentation must have the following information
 .. _Jeff Knupp: http://www.jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/
 .. _Miguel Grinberg: http://blog.miguelgrinberg.com/post/the-package-dependency-blues
 .. _pytest: http://pytest.org/
-.. _pytest-cov: https://pypi.python.org/pypi/pytest-cov
 .. _ReadTheDocs: https://readthedocs.org/
 .. _this GitHub HowTo: https://www.howtoforge.com/tutorial/install-git-and-github-on-ubuntu-14.04/
 .. _tox: https://tox.readthedocs.org
