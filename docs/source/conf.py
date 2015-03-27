@@ -88,8 +88,8 @@ def find_version(*file_paths):
     raise RuntimeError("Unable to find version string.")
 
 # Extract release and version
-release = find_version('../../pypkg/__init__.py')
-version = '.'.join(release.split('.')[:2])
+release = 0.0
+version = 0.0
 
 # Be clean
 del io, re, find_version
