@@ -148,8 +148,14 @@ If you want to upload the project to GitHub_ (for more information you can check
   .. code-block:: bash
 
     git push origin <branch_name>
+    
+4. Tracking a remote branch (in *origin*) to a local branch with same name
 
+  .. code-block:: bash
 
+    git branch -u origin/<branch_name>
+   
+   
 -------------------
 Virtual Environment
 -------------------
